@@ -54,7 +54,7 @@ body {
   width: 100%; /* Full width */
   /* height: 5rem; */
   background-color: #fff;
-  z-index: 1;
+  z-index: 3;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
   -o-transition: 0.3s ease;
@@ -635,16 +635,33 @@ body {
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-
 .sec4container {
+  /* border: 2px solid red; */
   width: 60vw;
-  padding-bottom: 3rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  height: 70vh;
+  padding-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative; /* border: 15px solid purple; */
+}
+
+.carousel-container {
+  background-color: #000;
+  height: 50vh;
   position: relative;
-  /* border: 15px solid purple; */
+  overflow: hidden;
+  border: 2px solid #000;
+  /* border: 3px solid rgb(255, 255, 255);
+  border: 15px solid #000;*/
+  /* border: 15px solid orange; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 16px;
+  margin-bottom: 1rem;
 }
 
 .carousel {
@@ -686,27 +703,8 @@ body {
   /* border: 2px solid red; */
 }
 
-.carousel-container {
-  background-color: #000;
-  height: 50vh;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid #000;
-  /* border: 3px solid rgb(255, 255, 255);
-  border: 15px solid #000;*/
-  /* border: 15px solid orange; */
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-    rgba(0, 0, 0, 0.23) 0px 6px 16px;
-  margin-bottom: 1rem;
-}
-
 .carousel-container .btn {
-  /* position: absolute; */
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
   /* background: transparent; */
@@ -716,6 +714,28 @@ body {
   size: 14rem;
   /* background-color: red; */
   border-radius: 50%;
+  background-color: #000;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-size: 3rem;
+}
+
+.left-btn {
+  left: -4rem;
+  z-index: 2;
+}
+
+.right-btn {
+  right: -5rem;
+  z-index: 2;
 }
 
 .fa-chevron-left,
@@ -723,8 +743,8 @@ body {
   font-size: 5rem;
 }
 
-.carousel-container .left-btn {
-  left: -1rem;
+/* .carousel-container .left-btn {
+  left: -2rem;
   color: #000;
   z-index: 2;
 }
@@ -732,11 +752,11 @@ body {
 .carousel-container .right-btn {
   right: 2rem;
   color: #000;
-}
+} */
 
 .sec4subhead {
-  border: 2px solid #000;
-  background: rgba(255, 255, 255, 0.2);
+  border: 15px solid #000;
+  background: transparent;
   border-radius: 16px;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -744,15 +764,16 @@ body {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
     rgba(0, 0, 0, 0.23) 0px 6px 16px;
   margin-bottom: 1rem;
+  /* border: 3px solid green; */
 }
 
 .explain {
   /* border: 2px solid red; */
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   /* background-color: #000;
   color: #fff; */
-  background-color: #fff;
+  background: transparent;
   color: #000;
   /* border-top: 2px solid #000;
   border-left: 2px solid #000;
@@ -787,7 +808,7 @@ body {
   justify-content: center;
   align-items: center;
   /* background-color: #000; */
-  background-color: #fff;
+  background: transparent;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -805,7 +826,7 @@ body {
 }
 
 .dot.active {
-  background: #fff;
+  background: rgba(255, 255, 255, 1);
   border: 1px solid #000;
 }
 
@@ -1093,9 +1114,9 @@ body {
   }
 
   .sec4container {
+    width: 70vw;
     height: 70vh;
     padding-bottom: 2rem;
-    padding-right: 5rem;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -1112,17 +1133,12 @@ body {
     font-size: 3rem;
   }
 
-  .btn img {
-    width: 20px;
-    height: 20px;
-  }
-
   .left-btn {
-    left: 1rem;
+    left: -4rem;
   }
 
   .right-btn {
-    right: 0rem;
+    right: -5rem;
   }
 
   .sec5text {
@@ -1324,25 +1340,18 @@ body {
   }
 
   .sec4container {
-    padding-bottom: 2rem;
-    padding-right: 5rem;
+    width: 80vw;
   }
-
   .btn {
     font-size: 2.5rem;
   }
 
-  .btn img {
-    width: 20px;
-    height: 20px;
-  }
-
   .left-btn {
-    left: 2rem;
+    left: -4rem;
   }
 
   .right-btn {
-    right: 0rem;
+    right: -5rem;
   }
 
   .sec5text {
@@ -1654,7 +1663,7 @@ body {
   .nav .dot.active {
     width: 1rem;
     height: 1rem;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 1);
     border: 1px solid #000;
   }
 

@@ -637,42 +637,37 @@ body {
 }
 
 .sec4container {
-  width: 80vw;
-  height: 70vh;
-  margin-top: 0;
-  margin-bottom: 0;
+  width: 60vw;
   padding-bottom: 3rem;
   padding-left: 5rem;
   padding-right: 5rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-}
-
-.carousel-container {
-  height: 70vh;
-  position: relative;
-  overflow: hidden;
-  /* border: 3px solid rgb(255, 255, 255);
-  outline: 3px solid rgb(0, 0, 0); */
-  border: 15px solid #000;
-  /* border-image: linear-gradient(45deg, rgb(118, 141, 164), rgb(207, 218, 230)) 1; */
-  /* border: 5px solid red; */
+  /* border: 15px solid purple; */
 }
 
 .carousel {
+  height: 50vh;
   padding: 0;
   margin: 0;
   list-style: none;
+  /* border: 15px solid yellow; */
+
   transition: 300ms transform ease-in;
 }
 
 .slide {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  height: 50vh;
   padding: 0;
   margin: 0;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
+  /* border: 15px solid blue; */
 }
 
 .slide a:hover {
@@ -685,45 +680,116 @@ body {
 
 .slide img {
   width: 100%;
-  height: 70vh;
+  /* object-fit: scale-down; */
   object-fit: cover;
   object-position: top left;
+  /* border: 2px solid red; */
 }
 
-.btn {
-  position: absolute;
+.carousel-container {
+  background-color: #000;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #000;
+  /* border: 3px solid rgb(255, 255, 255);
+  border: 15px solid #000;*/
+  /* border: 15px solid orange; */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 16px;
+  margin-bottom: 1rem;
+}
+
+.carousel-container .btn {
+  /* position: absolute; */
   top: 50%;
   transform: translateY(-50%);
-  background: transparent;
+  /* background: transparent; */
   border: none;
   cursor: pointer;
   color: #000;
-  font-size: 4rem;
+  size: 14rem;
+  /* background-color: red; */
+  border-radius: 50%;
 }
 
-.btn img {
-  width: 20px;
-  height: 20px;
+.fa-chevron-left,
+.fa-chevron-right {
+  font-size: 5rem;
 }
 
-.left-btn {
-  left: -0rem;
+.carousel-container .left-btn {
+  left: -1rem;
+  color: #000;
+  z-index: 2;
+}
+
+.carousel-container .right-btn {
+  right: 2rem;
   color: #000;
 }
 
-.right-btn {
-  right: -0rem;
+.sec4subhead {
+  border: 2px solid #000;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 16px;
+  margin-bottom: 1rem;
+}
+
+.explain {
+  /* border: 2px solid red; */
+  font-size: 1.8rem;
+  font-weight: bold;
+  /* background-color: #000;
+  color: #fff; */
+  background-color: #fff;
   color: #000;
+  /* border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000; */
+  /* padding-bottom: 1rem; */
+  /* width: 100%; */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.expText {
+  display: none;
+}
+
+.expText.active {
+  display: block;
 }
 
 .nav {
-  padding-bottom: 1rem;
-  width: 100%;
-  /* height: 30px; */
-  top: 70vh;
-  display: flex;
+  /* border-left: 2px solid #000;
+  border-right: 2px solid #000; */
+  /* border: 2px solid red; */
+  /* padding-bottom: 1rem; */
+  /* top: 10px; */
+  display: grid;
+  grid-auto-flow: column;
   justify-content: center;
-  background-color: #000;
+  align-items: center;
+  /* background-color: #000; */
+  background-color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .nav .dot {
@@ -739,12 +805,16 @@ body {
 }
 
 .dot.active {
-  background: rgba(255, 255, 255, 1);
+  background: #fff;
   border: 1px solid #000;
 }
 
 .hide {
   display: none;
+}
+
+.sec4bottom {
+  margin-bottom: 5rem;
 }
 
 /* Section 5 --------------------------- */
@@ -834,7 +904,6 @@ body {
 
 .sec6img {
   padding-top: 2rem;
-  padding-bottom: 2rem;
   width: 400px;
   height: 400px;
   /* background-color: #fff; */
@@ -1573,8 +1642,8 @@ body {
   .nav .dot {
     background-color: rgb(135, 134, 134);
     border: none;
-    width: 45px;
-    height: 45px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     margin: 8px 10px;
     cursor: pointer;
@@ -1583,9 +1652,9 @@ body {
   }
 
   .nav .dot.active {
-    width: 45px;
-    height: 45px;
-    background: rgba(255, 255, 255, 1);
+    width: 1rem;
+    height: 1rem;
+    background-color: #fff;
     border: 1px solid #000;
   }
 

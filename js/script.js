@@ -10,6 +10,12 @@ const previousButton = document.querySelector(".left-btn");
 // SELECT THE NAV
 const nav = document.querySelector(".nav");
 
+// SELECT THE TEXT
+const explain = document.querySelector(".explain");
+
+// SELECT ALL THE EXPLANATIONS
+const expTxt = [...explain.children];
+
 // SELECT ALL THE DOTS
 const dots = [...nav.children];
 
@@ -36,6 +42,7 @@ nextButton.addEventListener("click", function () {
   moveToSlide(carousel, currentSlide, nextSlide);
   hideButton(nextSlide, slides);
   moveToDot(nextSlide, slides, nav, dots);
+  moveToTxT(nextSlide, slides, explain, expTxt);
 });
 
 // ON LEFT BUTTON CLICK, WE MOVE(TranslateX) THE CAROUSEL TO THE RIGHT
@@ -46,6 +53,7 @@ previousButton.addEventListener("click", function () {
   moveToSlide(carousel, currentSlide, previousSlide);
   hideButton(previousSlide, slides);
   moveToDot(previousSlide, slides, nav, dots);
+  moveToTxT(previousSlide, slides, explain, expTxt);
 });
 
 // ON DOT CLICK
@@ -62,6 +70,9 @@ nav.addEventListener("click", function (e) {
   // SELECT THE CURRENT SLIDE
   const currentSlide = carousel.querySelector(".active");
 
+  // SELECT THE CURRENT Txt
+  const currentTxt = explain.querySelector(".active");
+
   // find the index of the dot, so we can target the right slide
   let targetDotIndex = findIndex(targetDot, dots);
 
@@ -70,6 +81,7 @@ nav.addEventListener("click", function (e) {
 
   moveToSlide(carousel, currentSlide, targetSlide);
   toggleActive(currentDot, targetDot);
+  moveToTxT(targetSlide, slides, explain, expTxt);
   hideButton(targetSlide, slides);
 });
 
@@ -79,6 +91,13 @@ function moveToDot(targetSlide, slides, nav, dots) {
   const currentDot = nav.querySelector(".active");
   const targetDot = dots[slideIndex];
   toggleActive(currentDot, targetDot);
+}
+// MOVE TO TXT
+function moveToTxT(targetSlide, slides, explain, expTxt) {
+  let slideIndexTxT = findIndex(targetSlide, slides);
+  const currentTxt = explain.querySelector(".active");
+  const targetTxt = expTxt[slideIndexTxT];
+  toggleActive(currentTxt, targetTxt);
 }
 // MOVE TO SLIDE
 function moveToSlide(carousel, currentSlide, targetSlide) {

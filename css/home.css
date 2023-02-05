@@ -648,6 +648,13 @@ body {
 
   transition: 300ms transform ease-in;
 }
+.slide img {
+  width: 100%;
+  /* object-fit: scale-down; */
+  object-fit: cover;
+  object-position: top left;
+  /* border: 2px solid red; */
+}
 
 .slide {
   /* display: flex;
@@ -668,14 +675,6 @@ body {
   -moz-transition: 0.35s ease;
   -o-transition: 0.35s ease;
   transition: 0.35s ease;
-}
-
-.slide img {
-  width: 100%;
-  /* object-fit: scale-down; */
-  object-fit: cover;
-  object-position: top left;
-  /* border: 2px solid red; */
 }
 
 .carousel-container .btn {
@@ -1597,17 +1596,28 @@ body {
     padding-right: 0;
   }
   .sec4container {
-    width: 90vw;
-    height: 70vh;
-    padding-bottom: 2rem;
-    margin-left: 0;
-    padding-left: 0;
-    margin-right: 0;
-    padding-right: 0;
+    width: 80vw;
+
+    /* height: 70vh; */
+    padding: 0;
+    margin: 0;
     /* border: 1px solid red; */
     /* border: 5px solid red; */
   }
 
+  .carousel {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* border: 5px solid blue; */
+  }
+  .slide img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
   .nav {
     width: 100%;
     display: flex;
@@ -1647,6 +1657,12 @@ body {
 
   .right-btn {
     display: none;
+  }
+  .sec5img {
+    height: auto;
+    width: 50vw;
+    margin-top: auto;
+    /* border: 2px solid red; */
   }
 
   .sec5text {

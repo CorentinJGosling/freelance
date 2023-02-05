@@ -744,8 +744,6 @@ body {
 
 .explain {
   /* border: 2px solid red; */
-  font-size: 2rem;
-  font-weight: bold;
   /* background-color: #000;
   color: #fff; */
   background: transparent;
@@ -766,6 +764,9 @@ body {
 }
 .expText {
   display: none;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .expText.active {
@@ -1339,6 +1340,9 @@ body {
     height: auto;
     padding-top: 1rem;
   }
+  .dropdown {
+    margin-right: 0rem;
+  }
 
   .hamburger {
     top: 0;
@@ -1648,6 +1652,10 @@ body {
   .sec5text {
     font-size: 1.25rem;
   }
+  .expText {
+    display: none;
+    font-size: 1.5rem;
+  }
 }
 /* ==================================================================================*/
 /* ==================================Responsiveness==================================*/
@@ -1685,14 +1693,45 @@ body {
 
   .sec5container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     gap: 2rem;
   }
+  .sec5box {
+    align-items: center;
+    justify-content: center;
+  }
+  #fullName,
+  #email_id,
+  #message,
+  #title {
+    width: 90vw;
+    height: 1rem;
+    border-radius: 5px;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #000;
+  }
+
+  #message {
+    min-height: 100px;
+  }
+
+  #btn_request {
+    width: 50vw;
+    padding: 10px;
+    margin: 0;
+    /* border: 2px solid red; */
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .navlist {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
   .hour_rate {
     margin-left: 0;
     margin-right: 0;

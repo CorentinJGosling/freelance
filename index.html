@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("Eh2BIGxMIr6FFl2h3");
+      })();
+    </script>
     <link rel="stylesheet" href="css/home.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -357,21 +366,41 @@
     <!-- SECTION 5 ------------------------------------------------------ -->
     <section class="sec5" id="contact">
       <div class="sec5head">Now you just need to contact us!</div>
+      <div class="sec5text">
+        Send us an email at <b style="color: #b63c13">capgos@gmail.com</b> or
+        leave a message describing your inquiry.
+      </div>
       <div class="sec5container">
         <img src="img/contact.svg" class="sec5img" />
         <div class="sec5box">
-          <div class="sec5text">Send us an email describing your inquiry.</div>
-          <a href="" class="emailbtn">capgos@gmail.com</a>
-          <div class="enveloppewrap">
-            <a href="c@gmail.com" class="enveloppe">
-              <i class="fas fa-envelope"></i
-            ></a>
-          </div>
+          <input
+            id="title"
+            type="text"
+            placeholder="Your degree (BSc, MSc, PhD, MD)"
+            required
+          /><br />
+          <input
+            id="fullName"
+            type="text"
+            placeholder="(Nick-)name"
+            required
+          /><br />
+          <input
+            id="email_id"
+            type="email"
+            placeholder="Your email address"
+            required
+          /><br />
+          <textarea
+            id="message"
+            type="text"
+            placeholder="Describe your inquiry here"
+            required
+          ></textarea
+          ><br />
+          <button id="btn_request" onclick="SendMail()">Send message</button>
         </div>
       </div>
-    </section>
-    <section class="sec6">
-      <img src="logo/logo6.svg" class="sec6img" />
     </section>
 
     <div class="modal1">

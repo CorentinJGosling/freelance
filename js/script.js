@@ -205,3 +205,43 @@ hamburger.addEventListener("click", toggleMenu);
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
+
+// window.onload = function () {
+//   document
+//     .getElementById("contact-form")
+//     .addEventListener("submit", function (event) {
+//       event.preventDefault();
+//       // generate a five digit number for the contact_number variable
+//       this.contact_number.value = (Math.random() * 100000) | 0;
+//       // these IDs from the previous steps
+//       emailjs.sendForm("contact_service", "contact_form", this).then(
+//         function () {
+//           console.log("SUCCESS!");
+//         },
+//         function (error) {
+//           console.log("FAILED...", error);
+//         }
+//       );
+//     });
+// };
+
+function SendMail() {
+  var params = {
+    title: document.getElementById("title").value,
+    from_name: document.getElementById("fullName").value,
+    email_id: document.getElementById("email_id").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs
+    .send("service_mhgccsp", "template_q68z7ym", params)
+    .then(function (res) {
+      if (res.status == 200) {
+        mess =
+          "Your message has been sent! You will hear from us in the coming days.";
+      } else {
+        mess =
+          "Your message has not been sent! Please send you inquiry directly by email at x@x.";
+      }
+      alert(mess);
+    });
+}

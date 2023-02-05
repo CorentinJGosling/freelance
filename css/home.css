@@ -11,15 +11,6 @@ p {
 html {
   scroll-behavior: smooth;
   scroll-padding: 5rem;
-  /* scroll-behavior: auto; */
-}
-:root {
-  /* https://visme.co/blog/website-color-schemes/ */
-  --height_slide: 70vh;
-  --xxs: 0.8rem;
-  --xs: 0.9rem;
-  --s: 1rem;
-  --l: 3rem;
 }
 
 body {
@@ -49,10 +40,9 @@ body {
   align-items: center;
   border-bottom: 1px solid black;
   overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  /* height: 5rem; */
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #fff;
   z-index: 3;
   -webkit-transition: 0.3s ease;
@@ -60,19 +50,12 @@ body {
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-.right {
-  visibility: hidden;
-}
 .navlist {
+  min-width: 60vw;
+  /* border: 2px solid red; */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 2px solid red; */
-  /* grid-template-columns: 1fr repeat(4, auto) 1fr; */
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   list-style-type: none;
 }
 
@@ -101,7 +84,6 @@ body {
   -moz-transition: font-size 0.15s ease;
   -o-transition: font-size 0.15s ease;
   transition: font-size 0.15s ease;
-  /* border: 2px solid red; */
   height: 100%;
 }
 .navlist li.active a:hover {
@@ -133,11 +115,8 @@ body {
   flex-direction: column;
   gap: 0.05rem;
   /* border: 2px solid red; */
-  padding-right: 1rem;
-}
-.dropdown a {
-  /* visibility: hidden; */
   width: 50px;
+  margin-right: 1rem;
 }
 .mainflag {
   display: flex;
@@ -161,16 +140,12 @@ body {
 
 .dropdown-content {
   display: none;
-  /* position: absolute; */
   background-color: #fff;
   z-index: 10;
   overflow: visible;
 }
 .dropdown:hover .dropdown-content {
-  /* width: 150px; */
-  /* display: flex; */
   display: block;
-  /* flex-direction: row; */
   overflow: visible;
 }
 
@@ -981,25 +956,11 @@ body {
   }
 
   .navlist {
-    grid-template-columns: 1fr repeat(4, auto) 1fr;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     list-style-type: none;
-  }
-
-  .navlist li:not(:nth-child(1)) {
-    height: 100%;
-  }
-
-  .navlist li:nth-child(2) {
-    grid-column-start: 2;
-  }
-
-  .logo_img {
-    opacity: 1;
-    width: 80px;
   }
 
   .navlist li a {

@@ -550,7 +550,7 @@ body {
 .modal1 {
   display: none;
   position: fixed;
-  padding-top: 30vh;
+  padding-top: 20vh;
   left: 0;
   top: 0;
   width: 100%;
@@ -1739,6 +1739,10 @@ body {
     padding: 10px;
     margin: 0;
     /* border: 2px solid red; */
+  }
+
+  .modal1 {
+    padding-top: 5vh;
   }
 }
 

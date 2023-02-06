@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Dosis&family=Inter&family=Manrope&family=Nanum+Gothic&family=Open+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap");
-
 .headPubli {
   font-weight: bold;
   font-size: 1.5rem;
@@ -1129,6 +1127,12 @@ body {
     font-size: 0.9rem;
   }
 
+  .flagimg {
+    width: 40px;
+    border-radius: 7px;
+    overflow: visible;
+  }
+
   .navlist {
     /* display: flex;
     align-items: center;
@@ -1426,7 +1430,7 @@ body {
     /* scroll-behavior: auto; */
   }
   body {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   /* SECTION 1 ---------------------------------------- */
@@ -1753,10 +1757,8 @@ body {
   }
 
   .hour_rate {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     /* margin-bottom: 2rem; */
   }
   .sec2row {

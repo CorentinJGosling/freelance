@@ -110,41 +110,28 @@ body {
 
 .dropdown {
   display: flex;
-  flex-direction: column;
-  gap: 0.05rem;
-  /* border: 2px solid red; */
-  width: 50px;
-  margin-right: 1rem;
-}
-.mainflag {
-  display: flex;
   flex-direction: row;
+  gap: 0.5rem;
+  /* border: 2px solid red; */
+  /* width: 50px; */
+  margin-right: 1rem;
 }
 
 .flagimg {
   width: 50px;
   border-radius: 7px;
-  overflow: visible;
+  border: 3px solid #fff;
+  opacity: 0.6;
 }
 .flagimg.selected {
-  border: 1px solid #000;
+  border: 3px solid #000;
+  opacity: 1;
 }
 .flagimg:hover {
-  opacity: 0.6;
+  opacity: 1;
 }
 .flagimg:hover .flagimg.selected {
   opacity: 0.6;
-}
-
-.dropdown-content {
-  display: none;
-  background-color: #fff;
-  z-index: 10;
-  overflow: visible;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-  overflow: visible;
 }
 
 .hamburger {
@@ -169,14 +156,19 @@ body {
   /* border: 5px solid blue; */
 
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: auto auto;
+  max-width: 70vw;
+  min-height: 40vh;
+  gap: 2rem;
+  text-align: left;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   color: #000;
   padding-top: 3rem;
   /* ???? */
-  margin-right: 10rem;
+  margin-left: auto;
+  margin-right: auto;
   /* ???? */
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -185,8 +177,7 @@ body {
 .sec1left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   /* border: 2px solid red; */
 }
 .sec1right {
@@ -194,18 +185,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border: 2px solid red; */
 }
 
 .sec1head {
   font-size: 3.2rem;
   font-weight: 600;
 }
+.sec1head span {
+  color: #d74211;
+}
+
 .sec1text {
   color: rgb(80, 80, 80);
   max-width: 50ch;
   margin-bottom: 1rem;
-  text-align: center;
   font-size: 1.5rem;
+  /* border: 2px solid red; */
+  margin-right: 5rem;
 }
 
 .sec1buttons {
@@ -233,7 +230,7 @@ body {
 
 .sec1img {
   opacity: 0.9;
-  width: 100%;
+  width: 80%;
 }
 /* ==================================================================================*/
 /* ====================================SECTION 2=====================================*/
@@ -811,6 +808,56 @@ body {
   margin-bottom: 5rem;
 }
 
+.swiper {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid red;
+}
+.mySwiper {
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px 0;
+  border: 5px solid green;
+}
+.mySwiper2 {
+  height: 300px;
+  margin-bottom: 2rem;
+  border: 5px solid blue;
+}
+.mySwiper2 a {
+  position: absolute;
+  padding: 5rem;
+  background-color: #fff;
+  color: #000;
+  margin-left: 35%;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mySwiper .swiper-slide {
+  width: 20%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* Section 5 --------------------------- */
 .sec5 {
   background: rgb(151, 173, 195);
@@ -860,7 +907,8 @@ body {
 #fullName,
 #email_id,
 #message,
-#title {
+#title,
+#budget_id {
   width: 30rem;
   height: 1rem;
   border-radius: 5px;
@@ -998,8 +1046,8 @@ body {
   .sec1left {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
   }
   .sec1head {
     font-size: 2.75rem;

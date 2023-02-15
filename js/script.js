@@ -226,3 +226,47 @@ function SendMail() {
       alert(mess);
     });
 }
+
+new Typed("#typed", {
+  strings: ["scientific writing", "data analysis"],
+  typeSpeed: 80,
+  delaySpeed: 90,
+  loop: true,
+});
+// ScrollReveal().reveal(".sec2head", { delay: 1000 });
+// ScrollReveal().reveal(".sec2row", { delay: 1000 });
+ScrollReveal().reveal(".member", {
+  delay: 300,
+  distance: "100%",
+  origin: "right",
+});
+// ScrollReveal().reveal(".sec3col" { delay: 0 });
+// var swiper = new Swiper(".mySwiper", {
+//   spaceBetween: 30,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});

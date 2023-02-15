@@ -22,13 +22,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
     </style>
-    <title>CapGos - Hire a data analysis expert!</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <title>CapGos | Research experts</title>
   </head>
   <div class="navbar">
-    <img src="logo/logo5.svg" class="logo_img" />
+    <img src="logo/logoFin.svg" class="logo_img" />
     <ul class="navlist">
       <li class="home active"><a href="#home">Home</a></li>
       <li class="about"><a href="#about">About us</a></li>
@@ -37,13 +44,8 @@
       <li class="contact"><a href="#contact">Contact</a></li>
     </ul>
     <div class="dropdown">
-      <div class="mainflag">
-        <a href=""><img src="flag/enflag.svg" class="flagimg selected" /></a>
-        <!-- <i class="fas fa-sort-down"></i> -->
-      </div>
-      <div class="dropdown-content">
-        <a href="indexFR.html"><img src="flag/frflag.svg" class="flagimg" /></a>
-      </div>
+      <a href=""><img src="flag/enflag.svg" class="flagimg selected" /></a>
+      <a href="indexFR.html"><img src="flag/frflag.svg" class="flagimg" /></a>
     </div>
   </div>
   <button class="hamburger">
@@ -52,23 +54,9 @@
   </button>
 
   <body>
-    <!-- <h2>Student Contact Form</h2>
-    <form
-      action="mailto:corentin.gosling@gmail.com"
-      method="post"
-      enctype="text/plain"
-    >
-      Student Name:<br /><input type="text" name="sname" /> <br />
-      Student Subject:<br /><input type="text" name="ssubject" /><br />
-      <input type="submit" value="Send" />
-    </form> -->
-
     <section class="sec1" id="home">
       <div class="sec1left">
-        <!-- <div class="logoFront"><img src="logo4.svg" /></div> -->
-        <!-- https://www.g2.com/articles/data-analysis-process -->
-        <!-- <img src="logo5.svg" class="logoFront" /> -->
-        <div class="sec1head">Data analysis & scientific writing</div>
+        <div class="sec1head">Assist you with <span id="typed"></span></div>
         <div class="sec1text">
           We are two freelance consultants in mental health research with a
           strong background in the design, analysis and publication of
@@ -80,7 +68,7 @@
         </div>
       </div>
       <div class="sec1right">
-        <img src="img/sec1.svg" class="sec1img" />
+        <img src="img/Rplot6.svg" class="sec1img" />
         <!-- <img src="logo5.svg" class="sec1img" /> -->
       </div>
     </section>
@@ -379,12 +367,11 @@
             id="title"
             type="text"
             placeholder="Your degree (BSc, MSc, PhD, MD)"
-            required
           /><br />
           <input
             id="fullName"
             type="text"
-            placeholder="(Nick-)name"
+            placeholder="Your name"
             required
           /><br />
           <input
@@ -400,6 +387,12 @@
             required
           ></textarea
           ><br />
+          <input
+            id="budget_id"
+            type="text"
+            placeholder="Indicate your available budget for the job (give an estimate)"
+            required
+          /><br />
           <button id="btn_request" onclick="SendMail()">Send message</button>
         </div>
       </div>
@@ -478,6 +471,83 @@
         </p>
       </div>
     </div>
+    <!-- <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div> -->
+    <div
+      style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+      class="swiper mySwiper2"
+    >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="https://www.google.fr">View more</a>
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <div thumbsSlider="" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

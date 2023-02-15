@@ -614,13 +614,14 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative; /* border: 15px solid purple; */
+  display: none;
 }
 
 .carousel-container {
   background-color: #000;
   height: 50vh;
   position: relative;
-  overflow: scroll;
+  /* overflow: scroll; */
   border: 2px solid #000;
   /* border: 3px solid rgb(255, 255, 255);
   border: 15px solid #000;*/
@@ -634,6 +635,23 @@ body {
     rgba(0, 0, 0, 0.23) 0px 6px 16px;
   margin-bottom: 1rem;
 }
+/* https://codepen.io/newinweb/pen/EpPgdR */
+#snap {
+  /* Ensure that the contents flow horizontally */
+  overflow-x: auto;
+  white-space: nowrap;
+  /* display: flex; */
+}
+#snap.carousel {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Needed to work on iOS Safari */
+}
+#snap.carousel {
+  scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
+  scroll-snap-points-x: repeat(100%);
+  -ms-scroll-snap-points-x: repeat(100%);
+}
 
 .carousel {
   height: 50vh;
@@ -641,6 +659,9 @@ body {
   margin: 0;
   list-style: none;
   /* border: 15px solid yellow; */
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
 
   transition: 300ms transform ease-in;
 }
@@ -813,44 +834,59 @@ body {
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
-  border: 10px solid red;
+  /* border: 10px solid red; */
 }
 .mySwiper {
-  height: 100px;
+  background-color: transparent;
+  height: 15vh;
   box-sizing: border-box;
-  padding: 10px 0;
-  border: 5px solid green;
+  /* padding: 10px 0; */
+  /* border: 5px solid green; */
+  /* border-radius: 16px; */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* border: 1px solid rgba(255, 255, 255, 0.9); */
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 16px;
 }
 .mySwiper2 {
-  height: 300px;
-  margin-bottom: 2rem;
-  border: 5px solid blue;
+  height: 50vh;
+  margin-bottom: 1rem;
+  /* border: 5px solid blue; */
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 16px;
 }
-.mySwiper2 a {
+.swiper-slide a {
+  /* border: 5px solid purple; */
   position: absolute;
-  padding: 5rem;
+  /* padding: 5rem; */
   background-color: #fff;
   color: #000;
-  margin-left: 35%;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .swiper-slide {
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* background-size: cover;
+    background-position: center; */
+  text-align: center;
+  /* object-fit: cover; */
+  /* border: 5px solid green; */
 }
 
 .mySwiper .swiper-slide {
-  width: 20%;
+  /* width: 20%; */
+  /* border: 5px solid red; */
   height: 100%;
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .swiper-slide img {
@@ -1781,7 +1817,8 @@ body {
   #fullName,
   #email_id,
   #message,
-  #title {
+  #title,
+  #budget_id {
     width: 90vw;
     height: 1rem;
     border-radius: 5px;

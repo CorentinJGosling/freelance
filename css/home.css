@@ -1775,6 +1775,9 @@ body {
 /* =======================================950=======================================*/
 
 @media only screen and (max-width: 950px) {
+  .sec1right {
+    display: none;
+  }
   .sec1head {
     font-size: 2rem;
     margin-bottom: 1rem;

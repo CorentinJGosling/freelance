@@ -392,6 +392,9 @@ span {
   }
 }
 @media only screen and (max-width: 600px) {
+  .logo_img {
+    display: none;
+  }
   .navlist {
     justify-content: center;
   }

@@ -87,10 +87,10 @@ function CheckMail() {
 
   if (NameID == "" || emailID == "" || messID == "" || budgetID == "") {
     fail.style.display = "block";
-    succ.style.display = "none";
+    // succ.style.display = "none";
   } else {
     SendMail();
-    boxID.reset();
+    boxID.style.display = "none";
     succ.style.display = "block";
     fail.style.display = "none";
   }

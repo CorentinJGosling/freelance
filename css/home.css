@@ -754,6 +754,14 @@ br.responsive {
   color: green;
   font-size: 1.3rem;
   margin-bottom: 1rem;
+  width: 30rem;
+  background-color: #fff;
+  padding: 10px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #000;
 }
 .formFail {
   max-width: 50ch;

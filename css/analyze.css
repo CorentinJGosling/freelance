@@ -371,11 +371,14 @@ span {
 
   .expBoxes {
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 2rem;
   }
   .expBoxesReport {
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+
     grid-row-gap: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;

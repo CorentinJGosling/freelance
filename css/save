@@ -1,0 +1,19 @@
+.sec1left {
+  margin: 0;
+  padding: 0;
+  border: #e34736 solid 5px;
+}
+.sec1right {
+  border: #64e336 solid 5px;
+}
+.sec1head {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.sec1text {
+  max-width: 50ch;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1rem;
+}

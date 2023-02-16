@@ -25,6 +25,7 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+// NAVIGATION SCROLL
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll(".navlist li");
 
@@ -46,6 +47,8 @@ window.onscroll = () => {
     }
   });
 };
+
+// HAMBURGER MENU
 
 const menu = document.querySelector(".navbar");
 const menuItems = document.querySelectorAll(".menuItem");
@@ -70,6 +73,8 @@ hamburger.addEventListener("click", toggleMenu);
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
+
+// EMAIL SENDER
 
 function CheckMail() {
   var boxID = document.getElementById("form_id");

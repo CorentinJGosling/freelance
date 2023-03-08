@@ -176,6 +176,7 @@ body {
 .sec1left {
   display: flex;
   flex-direction: column;
+  font-size: 5.2rem;
 
   /* border: 2px solid red; */
 }
@@ -621,17 +622,15 @@ br.responsive {
   /* border: 10px solid red; */
 }
 .mySwiper {
-  height: 10vh;
+  height: 50px;
   box-sizing: border-box;
   /* padding: 10px 0; */
-  /* border: 5px solid green; */
   /* border-radius: 16px; */
-  backdrop-filter: blur(5px);
+  /* 
+    backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  /* border: 1px solid rgba(255, 255, 255, 0.9); */
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-    rgba(0, 0, 0, 0.23) 0px 6px 16px;
-  background-color: rgb(222, 222, 222);
+    rgba(0, 0, 0, 0.23) 0px 6px 16px; */
 }
 .mySwiper2 {
   height: 50vh;
@@ -664,10 +663,18 @@ br.responsive {
   opacity: 0.4;
 }
 
-.swiper-slide img {
+.mySwiper2 .swiper-slide img {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  object-position: left center;
+}
+.mySwiper .swiper-slide img {
+  display: block;
+  /* width: 100%; */
+  width: 100%;
   object-fit: cover top;
   cursor: pointer;
 }
@@ -889,11 +896,10 @@ br.responsive {
     align-items: left;
     justify-content: left;
   }
-  /* .sec1head {
-    font-size: 2.75rem;
+  .sec1head {
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-    display: inline-block;
-  } */
+  }
 
   .sec1text {
     color: rgb(80, 80, 80);
@@ -1178,6 +1184,27 @@ br.responsive {
 /* =======================================1200px=======================================*/
 
 @media only screen and (max-width: 1200px) {
+  .navlist {
+    grid-template-columns: 1fr repeat(4, auto) 1fr;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    list-style-type: none;
+  }
+
+  .navlist li a {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+  .navlist li.active a:hover {
+    font-size: 1rem;
+  }
+  .navlist li a:hover {
+    font-size: 1.1rem;
+    color: #000;
+  }
+
   .headPubli {
     font-size: 1.1rem;
   }
@@ -1202,7 +1229,7 @@ br.responsive {
     /* border: 2px solid green; */
     margin-right: 0;
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     gap: 1rem;
   }

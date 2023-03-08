@@ -167,6 +167,11 @@ var swiper = new Swiper(".mySwiper", {
 var swiper2 = new Swiper(".mySwiper2", {
   loop: true,
   spaceBetween: 10,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

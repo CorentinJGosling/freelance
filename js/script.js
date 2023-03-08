@@ -1,24 +1,28 @@
 var ebiact = document.getElementById("ebiact");
 ebiact.addEventListener("click", () => {
-  window.location.href = "https://ebiact-database.com/";
+  window.open("https://ebiact-database.com/", "_blank");
 });
 var esUtils = document.getElementById("esUtils");
 esUtils.addEventListener("click", () => {
-  window.location.href = "https://www.imardgroup.com/es.utils/";
+  window.open("https://www.imardgroup.com/es.utils/", "_blank");
 });
 var simba = document.getElementById("simba");
 simba.addEventListener("click", () => {
-  window.location.href = "https://simba-adhd.com/";
+  window.open("https://simba-adhd.com/", "_blank");
 });
 var bjcp = document.getElementById("bjcp");
 bjcp.addEventListener("click", () => {
-  window.location.href =
-    "https://corentinjgosling.github.io/BJCP_2022_TOMTB_ASD/";
+  window.open(
+    "https://corentinjgosling.github.io/BJCP_2022_TOMTB_ASD/",
+    "_blank"
+  );
 });
 var jaacap = document.getElementById("jaacap");
 jaacap.addEventListener("click", () => {
-  window.location.href =
-    "https://corentinjgosling.github.io/JAACAP_2022_SLEEP_ADHD/";
+  window.open(
+    "https://corentinjgosling.github.io/JAACAP_2022_SLEEP_ADHD/",
+    "_blank"
+  );
 });
 
 new Typed("#typed", {

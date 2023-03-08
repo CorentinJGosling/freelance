@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="138.53775mm"
-   height="130.05467mm"
-   viewBox="0 0 138.53775 130.05468"
+   width="70.33989mm"
+   height="21.556303mm"
+   viewBox="0 0 70.339889 21.556304"
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.5554293"
-     inkscape:cx="392.8176"
-     inkscape:cy="332.06267"
+     inkscape:zoom="0.77771465"
+     inkscape:cx="297.02411"
+     inkscape:cy="451.96525"
      inkscape:window-width="2560"
      inkscape:window-height="1361"
      inkscape:window-x="-9"
@@ -198,7 +198,8 @@
          sodipodi:start="0.10242276"
          sodipodi:end="0.10239066"
          sodipodi:open="true"
-         sodipodi:arc-type="arc" />
+         sodipodi:arc-type="arc"
+         d="M 122.41305,99.791748 A 64.402,64.525253 0 0 1 51.764363,157.3816 64.402,64.525253 0 0 1 -5.7160465,86.598167 64.402,64.525253 0 0 1 64.931714,29.007183 64.402,64.525253 0 0 1 122.41326,99.789688" />
     </clipPath>
     <clipPath
        clipPathUnits="userSpaceOnUse"
@@ -214,7 +215,8 @@
          sodipodi:start="0.10242276"
          sodipodi:end="0.10239066"
          sodipodi:open="true"
-         sodipodi:arc-type="arc" />
+         sodipodi:arc-type="arc"
+         d="M 122.41305,99.791748 A 64.402,64.525253 0 0 1 51.764363,157.3816 64.402,64.525253 0 0 1 -5.7160465,86.598167 64.402,64.525253 0 0 1 64.931714,29.007183 64.402,64.525253 0 0 1 122.41326,99.789688" />
     </clipPath>
     <linearGradient
        inkscape:collect="always"
@@ -330,7 +332,7 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(10.70983,-27.879589)">
+     transform="translate(-16.706735,-33.373208)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -357,27 +359,27 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.4583px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.862916"
-       x="23.887905"
-       y="65.680382"
+       x="222.40448"
+       y="212.85878"
        id="text26334"
        transform="scale(0.99911158,1.0008892)"><tspan
          sodipodi:role="line"
          id="tspan26332"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.4583px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.862916"
-         x="23.887905"
-         y="65.680382">GSM</tspan></text>
+         x="222.40448"
+         y="212.85878">GSM</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.862916"
-       x="18.929314"
-       y="80.306328"
+       x="217.44588"
+       y="227.48473"
        id="text26334-6"
        transform="scale(0.99911158,1.0008892)"><tspan
          sodipodi:role="line"
          id="tspan26332-9"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.862916"
-         x="18.929314"
-         y="80.306328">academia</tspan></text>
+         x="217.44588"
+         y="227.48473">academia</tspan></text>
     <image
        y="-3.9259655"
        x="-103.57753"
@@ -396,50 +398,50 @@
     <ellipse
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#636363;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path2073"
-       cx="18.077705"
-       cy="103.93866"
+       cx="216.41791"
+       cy="251.24794"
        rx="5.4537172"
        ry="5.4537177" />
     <ellipse
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#636363;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path2073-1"
-       cx="42.799"
-       cy="107.55594"
+       cx="241.13921"
+       cy="254.86522"
        rx="5.4537172"
        ry="5.4537177" />
     <ellipse
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#636363;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path2073-1-5"
-       cx="72.797035"
-       cy="94.02475"
+       cx="271.13724"
+       cy="241.33403"
        rx="5.4537172"
        ry="5.4537177" />
     <ellipse
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#636363;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path2073-1-5-8"
-       cx="100.43499"
-       cy="98.293259"
+       cx="298.77521"
+       cy="245.60254"
        rx="5.4537172"
        ry="5.4537177" />
     <path
        style="fill:none;fill-opacity:1;stroke:#636363;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 23.201034,103.31213 14.679273,4.44832"
+       d="m 221.54124,250.62141 14.67927,4.44832"
        id="path2306" />
     <path
        style="fill:none;fill-opacity:1;stroke:#636363;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 13.034838,104.31145 -9.0339693,3.66602"
+       d="m 211.37504,251.62073 -9.03397,3.66602"
        id="path2308" />
     <path
        style="fill:none;fill-opacity:1;stroke:#636363;stroke-width:1.79784;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 47.85986,105.20267 67.807341,95.186974"
+       d="m 246.20007,252.51195 19.94748,-10.0157"
        id="path2310" />
     <path
        style="fill:none;fill-opacity:1;stroke:#636363;stroke-width:1.55481;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 78.542241,93.780134 16.831043,3.424332"
+       d="m 276.88245,241.08941 16.83104,3.42433"
        id="path2312" />
     <path
        style="fill:none;fill-opacity:1;stroke:#636363;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 104.8646,96.945364 8.99247,-4.277462"
+       d="m 303.20481,244.25464 8.99247,-4.27746"
        id="path2312-8" />
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#EmptyTriangleInL)"
@@ -448,7 +450,8 @@
        sodipodi:nodetypes="ccc" />
     <g
        id="g11834"
-       clip-path="url(#clipPath12046)">
+       clip-path="url(#clipPath12046)"
+       transform="translate(198.34021,147.30928)">
       <rect
          style="fill:url(#linearGradient11664);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.477605;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect20548-9-6-3-6-9-0"
@@ -510,14 +513,36 @@
        style="fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path19773"
        sodipodi:type="arc"
-       sodipodi:cx="56.991199"
-       sodipodi:cy="93.199181"
+       sodipodi:cx="255.33141"
+       sodipodi:cy="240.50845"
        sodipodi:rx="64.402"
        sodipodi:ry="64.525253"
        sodipodi:start="0.10242276"
        sodipodi:end="0.10239066"
        sodipodi:open="true"
        sodipodi:arc-type="arc"
-       d="M 121.05569,99.796486 A 64.402,64.525253 0 0 1 50.40701,157.38633 64.402,64.525253 0 0 1 -7.0733997,86.602905 64.402,64.525253 0 0 1 63.574361,29.011921 64.402,64.525253 0 0 1 121.0559,99.794426" />
+       d="m 319.3959,247.10576 a 64.402,64.525253 0 0 1 -70.64868,57.58985 64.402,64.525253 0 0 1 -57.48041,-70.78343 64.402,64.525253 0 0 1 70.64776,-57.59099 64.402,64.525253 0 0 1 57.48154,70.78251" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.63509965px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.261878"
+       x="25.959923"
+       y="42.800858"
+       id="text2463"><tspan
+         sodipodi:role="line"
+         id="tspan2461"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.63509965px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.261878"
+         x="25.959923"
+         y="42.800858">Auxilium</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.63509965px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="16.402878"
+       y="54.755878"
+       id="text4105"><tspan
+         sodipodi:role="line"
+         id="tspan4103"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.63509965px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="16.402878"
+         y="54.755878">Academics</tspan></text>
   </g>
 </svg>

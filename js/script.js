@@ -1,3 +1,26 @@
+var ebiact = document.getElementById("ebiact");
+ebiact.addEventListener("click", () => {
+  window.location.href = "https://ebiact-database.com/";
+});
+var esUtils = document.getElementById("esUtils");
+esUtils.addEventListener("click", () => {
+  window.location.href = "https://www.imardgroup.com/es.utils/";
+});
+var simba = document.getElementById("simba");
+simba.addEventListener("click", () => {
+  window.location.href = "https://simba-adhd.com/";
+});
+var bjcp = document.getElementById("bjcp");
+bjcp.addEventListener("click", () => {
+  window.location.href =
+    "https://corentinjgosling.github.io/BJCP_2022_TOMTB_ASD/";
+});
+var jaacap = document.getElementById("jaacap");
+jaacap.addEventListener("click", () => {
+  window.location.href =
+    "https://corentinjgosling.github.io/JAACAP_2022_SLEEP_ADHD/";
+});
+
 new Typed("#typed", {
   strings: ["scientific writing", "data analysis"],
   typeSpeed: 80,

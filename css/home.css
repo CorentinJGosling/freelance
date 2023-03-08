@@ -68,7 +68,7 @@ body {
 
 .logo_img {
   opacity: 1;
-  width: 80px;
+  width: 120px;
   padding: 0.2rem;
   margin-left: 1rem;
   /* border: 2px solid red; */
@@ -189,10 +189,15 @@ body {
 
 .sec1head {
   font-size: 3.2rem;
-  font-weight: 600;
+  font-weight: 100;
 }
-.sec1head span {
+.sec1head .headspan2 {
   color: #e34736;
+  font-weight: 1000;
+}
+.sec1head .headspan {
+  font-weight: 1000;
+  /* color: red; */
 }
 
 .sec1text {
@@ -616,8 +621,7 @@ br.responsive {
   /* border: 10px solid red; */
 }
 .mySwiper {
-  background-color: transparent;
-  height: 15vh;
+  height: 10vh;
   box-sizing: border-box;
   /* padding: 10px 0; */
   /* border: 5px solid green; */
@@ -627,6 +631,7 @@ br.responsive {
   /* border: 1px solid rgba(255, 255, 255, 0.9); */
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
     rgba(0, 0, 0, 0.23) 0px 6px 16px;
+  background-color: rgb(222, 222, 222);
 }
 .mySwiper2 {
   height: 50vh;
@@ -639,17 +644,8 @@ br.responsive {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
     rgba(0, 0, 0, 0.23) 0px 6px 16px;
 }
-.swiper-slide a {
-  /* border: 5px solid purple; */
-  position: absolute;
-  /* padding: 5rem; */
-  background-color: #fff;
-  color: #000;
-  /* margin-left: auto;
-  margin-right: auto; */
-}
 
-.swiper-slide {
+.mySwiper .swiper-slide {
   /* background-size: cover;
     background-position: center; */
   text-align: center;
@@ -672,7 +668,8 @@ br.responsive {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover top;
+  cursor: pointer;
 }
 /* Section 5 --------------------------- */
 .sec5 {
@@ -892,10 +889,11 @@ br.responsive {
     align-items: left;
     justify-content: left;
   }
-  .sec1head {
+  /* .sec1head {
     font-size: 2.75rem;
     margin-bottom: 1rem;
-  }
+    display: inline-block;
+  } */
 
   .sec1text {
     color: rgb(80, 80, 80);
@@ -1217,16 +1215,13 @@ br.responsive {
     margin-right: 0;
     margin-left: 0;
   }
-  .sec1head {
-    /* border: 2px solid yellow; */
-    padding-right: 0;
-  }
   .sec1left {
     /* border: 3px solid red; */
   }
   .sec1head {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    padding-right: 0;
   }
 
   .sec1text {

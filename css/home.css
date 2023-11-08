@@ -570,15 +570,15 @@ br.responsive {
   text-decoration: none;
 }
 .icons a {
-  z-index: 9999;
+  z-index: 2;
 }
 .icons {
-  z-index: 9999;
+  z-index: 2;
 }
 
 .our-team:hover .icons a {
   color: #fff !important;
-  z-index: 9999;
+  z-index: 2;
 }
 
 /* ==================================================================================*/

@@ -131,7 +131,7 @@ function SendMail() {
     budget_id: document.getElementById("budget_id").value,
   };
   emailjs
-    .send("service_mhgccsp", "template_q68z7ym", params)
+    .send("service_mhgccsp", "template_75wl6pe", params)
     .then(function (res) {
       if (res.status == 200) {
         // mess =
@@ -143,24 +143,6 @@ function SendMail() {
       alert(mess);
     });
 }
-
-ScrollReveal().reveal(".member", {
-  delay: 300,
-  distance: "100%",
-  origin: "right",
-});
-// ScrollReveal().reveal(".sec3col" { delay: 0 });
-// var swiper = new Swiper(".mySwiper", {
-//   spaceBetween: 30,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   spaceBetween: 10,
@@ -184,3 +166,140 @@ var swiper2 = new Swiper(".mySwiper2", {
     swiper: swiper,
   },
 });
+
+function redirectToPage(page) {
+  window.location.href = page;
+}
+
+var chartData = {
+  barCircleWeb: [
+    {
+      index: 0.3,
+      value: 29588490,
+      fill: "#e35536",
+      label: "Research methods",
+    },
+    {
+      index: 0.4,
+      value: 28317462,
+      fill: "#eb836c",
+      label: "Study design",
+    },
+    {
+      index: 0.5,
+      value: 27317462,
+      fill: "#f2ac9c",
+      label: "Data analysis",
+    },
+    {
+      index: 0.6,
+      value: 15317462,
+      fill: "#f8d5cc",
+      label: "Publication help",
+    },
+    { index: 0.7, value: 12317462, fill: "#fcebe7", label: "Grant proposal" },
+    {
+      index: 0.8,
+      value: 10317462,
+      fill: "#fff",
+      label: "Website & app creation",
+    },
+    // { index: 0.9, value: 10317462, fill: "#e35536", label: "Yahoo! Health" },
+  ],
+};
+
+function drawBarCircleChart(data, target, values, labels) {
+  var w = 562,
+    h = 562,
+    size = data[0].value * 1.15,
+    radius = 300,
+    sectorWidth = 0.1,
+    radScale = 25,
+    sectorScale = 1.45,
+    target = d3.select(target),
+    valueText = d3.select(values),
+    labelText = d3.select(labels);
+
+  var arc = d3.svg
+    .arc()
+    .innerRadius(function (d, i) {
+      return (d.index / sectorScale) * radius + radScale;
+    })
+    .outerRadius(function (d, i) {
+      return (
+        (d.index / sectorScale + sectorWidth / sectorScale) * radius + radScale
+      );
+    })
+    .startAngle(Math.PI)
+    .endAngle(function (d) {
+      return Math.PI + (d.value / size) * 2 * Math.PI;
+    });
+
+  var path = target.selectAll("path").data(data);
+
+  //TODO: seperate color and index from data object, make it a pain to update object order
+  path
+    .enter()
+    .append("svg:path")
+    .attr("fill", function (d, i) {
+      return d.fill;
+    })
+    .attr("stroke", "#D1D3D4")
+    .transition()
+    .ease("elastic")
+    .duration(1000)
+    .delay(function (d, i) {
+      return i * 200;
+    })
+    .attrTween("d", arcTween);
+
+  labelText
+    .selectAll("tspan")
+    .data(data)
+    .enter()
+    .append("tspan")
+    .attr({
+      x: -50,
+      y: function (d, i) {
+        return 30 + i * 20;
+      },
+      "text-anchor": "start",
+    })
+    .text(function (d, i) {
+      return data[i].label;
+    });
+
+  function arcTween(b) {
+    var i = d3.interpolate({ value: 0 }, b);
+    return function (t) {
+      return arc(i(t));
+    };
+  }
+}
+
+// Animation Queue
+setTimeout(function () {
+  drawBarCircleChart(
+    chartData.barCircleWeb,
+    "#circleBar-web-chart",
+    "#circleBar-web-values",
+    "#circleBar-web-labels"
+  );
+}, 1000);
+
+d3.select("#circleBar-web-icon")
+  .transition()
+  .delay(500)
+  .duration(500)
+  .attr("opacity", "1");
+d3.select("#circleBar-web-text")
+  .transition()
+  .delay(750)
+  .duration(500)
+  .attr("opacity", "1");
+
+d3.select("#circleBar-web-clipLabels")
+  .transition()
+  .delay(600)
+  .duration(1250)
+  .attr("height", "150");

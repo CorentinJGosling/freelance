@@ -10,7 +10,7 @@
     ></script>
     <script type="text/javascript">
       (function () {
-        emailjs.init("Eh2BIGxMIr6FFl2h3");
+        emailjs.init("gGctp79z7vquwYjys");
       })();
     </script>
     <link rel="stylesheet" href="css/home.css" />
@@ -27,6 +27,8 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
     </style>
+    <script src="https://visjs.github.io/vis-graph3d/standalone/umd/vis-graph3d.min.js"></script>
+    <!-- <script src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/swiper@9.0.3/swiper-bundle.min.css"
@@ -46,7 +48,7 @@
     </ul>
     <div class="dropdown">
       <a href=""><img src="flag/enflag.svg" class="flagimg selected" /></a>
-      <a href="indexFR.html"><img src="flag/frflag.svg" class="flagimg" /></a>
+      <!-- <a href="indexFR.html"><img src="flag/frflag.svg" class="flagimg" /></a> -->
     </div>
   </div>
   <button class="hamburger">
@@ -75,12 +77,60 @@
         </div>
       </div>
       <div class="sec1right">
-        <img src="logo/Rplot5.svg" class="sec1img" />
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+          x="-100px"
+          y="0px"
+          width="324px"
+          height="350px"
+          overflow="visible"
+          xml:space="preserve"
+        >
+          <g id="circleBarCharts">
+            <!-- Web Circle Bar Chart -->
+            <g id="circleBar-web-group" transform="translate(0,0)">
+              <text id="circleBar-web-text" opacity="0" x="175" y="155">
+                Services
+              </text>
+              <g id="circleBar-web-chart" transform="translate(215,150)"></g>
+              <clippath id="circleBar-web-clipPath">
+                <rect
+                  id="circleBar-web-clipLabels"
+                  x="205"
+                  y="215"
+                  width="180"
+                  height="0"
+                ></rect>
+              </clippath>
+              <g
+                id="circleBar-web-legend"
+                clip-path="url(#circleBar-web-clipPath)"
+              >
+                <text
+                  id="circleBar-web-values"
+                  transform="translate(222,225)"
+                ></text>
+                <text
+                  id="circleBar-web-labels"
+                  transform="translate(277,225)"
+                ></text>
+              </g>
+            </g>
+            <!-- END: Web Circle Bar Chart -->
+          </g>
+        </svg>
+
+        <!-- <div id="mygraph"></div> -->
+        <!-- <div id="info"></div> -->
       </div>
     </section>
 
     <!-- SECTION 2 -->
     <section class="sec2" id="about">
+      <!-- <div class="sticky_wave"></div> -->
       <div class="sec2head">More information about us</div>
       <div class="sec2container">
         <div class="sec2mid">
@@ -123,26 +173,47 @@
               <i class="fas fa-graduation-cap"></i>Education
             </div>
             <div class="sec2text">
-              We both have a PhD in Psychology from either
+              We both have a PhD in Neuro/Cognitive Psychology from either
               <b>Goldsmith University of London</b> or
               <b>Paris Descartes University</b>.
             </div>
           </div>
         </div>
         <div class="sec2left">
-          <div class="member">
-            <img src="photous/imgsec2b.jpg" class="sec2img" />
-            <!-- <div class="overlay">Download Full CV</div> -->
-            <div class="sec2name">Dr Corentin J Gosling, PhD</div>
-            <div class="sec2aff">Paris Nanterre University, France</div>
-            <div class="sec2aff">University of Southampton, UK</div>
-
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" src="photous/imgsec2b.jpg" />
+            </div>
+            <div class="team-content">
+              <div class="name">Corentin J Gosling, PhD</div>
+              <div class="title">Paris Nanterre University, France</div>
+              <div class="title">University of Southampton, UK</div>
+            </div>
+            <div class="container">
+              <a
+                download="cv/CV - CJ Gosling - EN.pdf"
+                href="cv/CV - CJ Gosling - EN.pdf"
+                class="button button--piyo"
+              >
+                <div class="button__wrapper">
+                  <span class="button__text">CV</span>
+                </div>
+                <div class="characterBox">
+                  <div class="character wakeup">
+                    <div class="character__face"></div>
+                  </div>
+                  <div class="character wakeup">
+                    <div class="character__face"></div>
+                  </div>
+                  <div class="character">
+                    <div class="character__face"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
             <div class="read_more_icons">
               <div class="icons">
-                <a
-                  href="https://github.com/CorentinJGosling"
-                  class="button"
-                  target="_blank"
+                <a href="https://github.com/CorentinJGosling" target="_blank"
                   ><i class="fab fa-github"></i
                 ></a>
               </div>
@@ -154,34 +225,186 @@
                 ></a>
               </div>
             </div>
-            <a class="iconCV" href="cv/cv_cg.pdf" download>CV</a>
+            <ul class="social">
+              <li>
+                <a
+                  href="https://codepen.io/collection/XdWJOQ/"
+                  class="fa fa-facebook"
+                  aria-hidden="true"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://codepen.io/collection/XdWJOQ/"
+                  class="fa fa-twitter"
+                  aria-hidden="true"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://codepen.io/collection/XdWJOQ/"
+                  class="fa fa-google-plus"
+                  aria-hidden="true"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://codepen.io/collection/XdWJOQ/"
+                  class="fa fa-linkedin"
+                  aria-hidden="true"
+                ></a>
+              </li>
+            </ul>
           </div>
-
-          <div class="member">
-            <img src="photous/imgsec2a.jpg" class="sec2img" />
-            <div class="sec2name">Dr Serge Caparos, PhD</div>
-            <div class="sec2aff">Paris 8 University, France</div>
-            <div class="sec2aff">Institut Universitaire de France</div>
-
+          <div class="our-team">
+            <div class="picture">
+              <img class="img-fluid" src="photous/imgsec2a.jpg" />
+            </div>
+            <div class="team-content">
+              <div class="name">Serge Caparos, PhD</div>
+              <div class="title">Paris 8 University, France</div>
+              <div class="title">Institut Universitaire de France</div>
+            </div>
+            <div class="container">
+              <a
+                class="button button--hoo"
+                download="cv/CV - CJ Gosling - EN.pdf"
+                href="cv/CV - CJ Gosling - EN.pdf"
+              >
+                <div class="button__wrapper">
+                  <span class="button__text">CV</span>
+                </div>
+                <div class="characterBox">
+                  <div class="character wakeup">
+                    <div class="character__face"></div>
+                    <div class="charactor__face2"></div>
+                  </div>
+                  <div class="character wakeup">
+                    <div class="character__face"></div>
+                    <div class="charactor__face2"></div>
+                  </div>
+                  <div class="character">
+                    <div class="character__face"></div>
+                    <div class="charactor__face2"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
             <div class="read_more_icons">
               <div class="icons">
+                <a href="https://github.com/CorentinJGosling" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+              <div class="icons">
                 <a
-                  href="https://www.iufrance.fr/les-membres-de-liuf/membre/1964-serge-caparos.html"
+                  href="https://www.parisnanterre.fr/corentin-gosling--929655.kjsp?RH=1519826463065"
                   target="_blank"
                   ><i class="fas fa-university"></i
                 ></a>
               </div>
             </div>
-            <a class="iconCV" href="cv/cv_cg.pdf" download>CV</a>
+            <ul class="social">
+              <li>
+                <a
+                  href="https://codepen.io/collection/XdWJOQ/"
+                  class="fa fa-facebook"
+                  aria-hidden="true"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://codepen.io/collection/XdWJOQ/"
+                  class="fa fa-twitter"
+                  aria-hidden="true"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://codepen.io/collection/XdWJOQ/"
+                  class="fa fa-google-plus"
+                  aria-hidden="true"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://codepen.io/collection/XdWJOQ/"
+                  class="fa fa-linkedin"
+                  aria-hidden="true"
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SECTION 3 -->
-    <section class="sec3" id="services">
+    <section class="sec3" id="services" onclick="redirectToPage('design.html')">
       <div class="sec3head">Services & Prices</div>
-      <div class="sec3container">
+      <section id="timeline">
+        <div class="t1-item">
+          <div
+            class="t1-bg"
+            style="background-image: url(img/design.svg)"
+          ></div>
+          <div class="t1-year">
+            <p class="f2 heading">Design</p>
+          </div>
+          <div class="t1-content">
+            <!-- <h1>Heading one</h1> -->
+            <p>
+              If you have not started your research, we can help you design
+              observational and experimental studies, as well as meta-research
+              (from a simple power analysis to drafting protocol on various
+              repositories such as PROSPERO, OSF or AsPredicted). We can also
+              help you designing your project for a grant proposal.
+            </p>
+          </div>
+        </div>
+
+        <div class="t1-item" onclick="redirectToPage('analyze.html')">
+          <div
+            class="t1-bg"
+            style="background-image: url(img/analyze.svg)"
+          ></div>
+          <div class="t1-year">
+            <p class="f2 heading">Analysis</p>
+          </div>
+          <div class="t1-content">
+            <!-- <h1>Heading two</h1> -->
+            <p>
+              We can help you choose and conduct a wide range of statistical
+              analyses. We systematically ouput a self-explanatory document with
+              a reproductible R/python code as well as elegant figures to
+              vizualize the results. Additionally, we can also create a
+              dedicated website and/or interactive web-app.
+            </p>
+          </div>
+        </div>
+
+        <div class="t1-item" onclick="redirectToPage('report.html')">
+          <div
+            class="t1-bg"
+            style="background-image: url(img/report.svg)"
+          ></div>
+          <div class="t1-year">
+            <p class="f2 heading">Report</p>
+          </div>
+          <div class="t1-content">
+            <p>
+              We provide various services to help you report the results of a
+              study. This can go from improving an existing document to the
+              complete writing of the manuscript. We also provide pre
+              peer-reviewing to point out the weaknesses of your manuscript and
+              increase the likelihood of acceptance of your paper in a top
+              journal.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="sec3container">
         <div class="sec3cols">
           <div class="sec3col">
             <a class="sec3colbutton" target="" href="design.html">
@@ -256,7 +479,7 @@
             <b>an hour rate ranging from $25 to $150</b>.
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="sec4" id="portfolio">
@@ -365,8 +588,31 @@
         <span class="close-btn1">&times;</span>
         <div class="headPubli">Selected publications</div>
         <p>
-          ► Efficacy of psychosocial interventions in Autism Spectrum Disorder:
-          an umbrella review. <br />
+          ►
+          <a
+            href="https://doi.org/10.1016/S2215-0366(23)00272-9"
+            target="_blank"
+            >Association between relative age at school and persistence of
+            attention-deficit hyperactivity disorder in prospective studies: an
+            individual participant data meta-analysis.</a
+          >
+          <br />
+          <u>Gosling, C.J., Caparos, S.</u>, [159 other authors], & Cortese, S.
+          (2023).<br />
+          <b
+            >Lancet Psychiatry, Impact factor = 14.05, SJR rank (Psychiatry) =
+            Q1 (2/564)]</b
+          >
+        </p>
+        <p>
+          ►
+          <a
+            href="https://www.nature.com/articles/s41380-022-01670-z"
+            target="_blank"
+            >Efficacy of psychosocial interventions in Autism Spectrum Disorder:
+            an umbrella review.</a
+          >
+          <br />
           <u>Gosling, C.J.,</u> [...], & Delorme R. (2022).<br />
           <b
             >Molecular Psychiatry, Impact factor = 11.9, SJR rank (Psychiatry) =
@@ -374,17 +620,39 @@
           >
         </p>
         <p>
-          ► Association of parent-rated sleep disturbances with ADHD symptoms:
-          9-year follow-up of a population-based cohort study.<br />
-          <u>Gosling, C.J.,</u> [...] & Faraone, S.V. (2022).<br />
+          ►
+          <a href="https://doi.org/10.1177/0956797612452569" target="_blank"
+            >Do local and global perceptual biases tell us anything about local
+            and global selective attention?</a
+          ><br />
+          <u>Caparos</u>, S., Linnell, K. J., Bremner, A., De Fockert, J., &
+          Davidoff, J. (2013). <br />
+          <b
+            >Psychological Science, Impact factor = 7.3, SJR rank (Psychology) =
+            Q1 (31/1323).</b
+          >
+        </p>
+
+        <p>
+          ►
+          <a href="https://doi.org/10.1016/j.jaac.2022.05.013" target="_blank"
+            >Association of parent-rated sleep disturbances with ADHD symptoms:
+            9-year follow-up of a population-based cohort study.</a
+          ><br />
+          <u>Gosling, C.J.,</u> [...] & Faraone, S.V. (2023).<br />
           <b
             >Journal of the American Academy of Child and Adolescent Psychiatry,
             Impact factor = 5.4, SJR rank (Psychology) = Q1 (22/1323)</b
           >
         </p>
         <p>
-          ► Removing the effects of the site in brain imaging machine-learning –
-          Measurement and extendable benchmark.<br />
+          ►
+          <a
+            href="https://doi.org/10.1016/j.neuroimage.2022.119800"
+            target="_blank"
+            >Removing the effects of the site in brain imaging machine-learning
+            – Measurement and extendable benchmark.</a
+          ><br />
           Solanes*, A., <u>Gosling*</u>, C.J. [...] & Radua, J. (2023).<br />
           <b
             >NeuroImage, Impact Factor = 7.0, SJR rank (Neuroscience) = Q1
@@ -392,8 +660,13 @@
           >
         </p>
         <p>
-          ► metaumbrella: the first comprehensive suite to perform data analysis
-          in umbrella reviews with stratification of the evidence.<br />
+          ►
+          <a
+            href="https://dx.doi.org/10.1136/bmjment-2022-300534"
+            target="_blank"
+            >metaumbrella: the first comprehensive suite to perform data
+            analysis in umbrella reviews with stratification of the evidence.</a
+          ><br />
           <u>Gosling*</u>, C.J., Solanes*, A., Fusar-Poli, P., & Radua, J.
           (2022).<br />
           <b
@@ -402,18 +675,11 @@
           >
         </p>
         <p>
-          ► Do local and global perceptual biases tell us anything about local
-          and global selective attention?<br />
-          <u>Caparos</u>, S., Linnell, K. J., Bremner, A., De Fockert, J., &
-          Davidoff, J. (2013). <br />
-          <b
-            >Psychological Science, Impact factor = 7.3, SJR rank (Psychology) =
-            Q1 (31/1323).</b
-          >
-        </p>
-        <p>
-          ► Twenty years later, the cognitive portrait of openness to
-          reconciliation in Rwanda.<br />
+          ►
+          <a href="https://doi.org/10.1111/bjop.12275" target="_blank"
+            >Twenty years later, the cognitive portrait of openness to
+            reconciliation in Rwanda.</a
+          ><br />
           <u>Caparos</u>, S., Giroux, S.-V., Rutembesa, E., Habimana, E., &
           Blanchette, I. (2018). <br />
           <b
@@ -422,8 +688,13 @@
           >
         </p>
         <p>
-          ► From bias to sound intuiting: Boosting correct intuitive
-          reasoning.<br />
+          ►
+          <a
+            href="https://doi.org/10.1016/j.cognition.2021.104645"
+            target="_blank"
+            >From bias to sound intuiting: Boosting correct intuitive
+            reasoning.</a
+          ><br />
           Boissin*, E., <u>Caparos*</u>, S., Raoelison, M., & De Neys, W. (2021)
           <br />
           <b
@@ -433,6 +704,7 @@
         </p>
       </div>
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.2.2/d3.v3.min.js"></script>
 
     <script src="js/script.js"></script>
   </body>

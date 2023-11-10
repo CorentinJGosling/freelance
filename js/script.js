@@ -122,7 +122,11 @@ function CheckMail() {
     fail.style.display = "none";
   }
 }
+
 function SendMail() {
+  (function () {
+    emailjs.init("gGctp79z7vquwYjys");
+  })();
   var params = {
     title: document.getElementById("title").value,
     from_name: document.getElementById("fullName").value,
@@ -130,18 +134,18 @@ function SendMail() {
     message: document.getElementById("message").value,
     budget_id: document.getElementById("budget_id").value,
   };
-  emailjs
-    .send("service_mhgccsp", "template_75wl6pe", params)
-    .then(function (res) {
-      if (res.status == 200) {
-        // mess =
-        //   "Your message has been sent! You will hear from us in the coming days.";
-      } else {
-        mess =
-          "Your message has not been sent! Please send you inquiry directly by email at x@x.";
-      }
-      alert(mess);
-    });
+  var serviceID = "service_mhgccsp";
+  var templateID = "template_75wl6pe";
+  emailjs.send(serviceID, templateID, params).then(function (res) {
+    if (res.status == 200) {
+      mess =
+        "Your message has been sent! If we did not reply within the next few days, do not hesitate to contact us at auxilium-academics@gmail.com.";
+    } else {
+      mess =
+        "Your message has not been sent! Please send you inquiry directly by email at auxilium-academics@gmail.com.";
+    }
+    alert(mess);
+  });
 }
 var swiper = new Swiper(".mySwiper", {
   loop: true,

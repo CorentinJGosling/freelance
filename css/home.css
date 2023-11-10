@@ -550,6 +550,7 @@ br.responsive {
   transition: all 0.5s ease 0s;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+  min-height: 2rem;
 }
 
 .our-team:hover .social {
@@ -572,13 +573,17 @@ br.responsive {
 .icons a {
   z-index: 2;
 }
+
 .icons {
   z-index: 2;
 }
 
 .our-team:hover .icons a {
-  color: #fff !important;
+  color: #fff;
   z-index: 2;
+}
+.icons a:hover {
+  color: #fae8d4 !important;
 }
 
 /* ==================================================================================*/
